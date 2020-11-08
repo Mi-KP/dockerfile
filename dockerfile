@@ -5,6 +5,6 @@ RUN apt-get  install -y build-essential nodejs
 RUN mkdir /app 
 WORKDIR /app  
 COPY . /app
-WORKDIR /app/sampleapp 
+WORKDIR /app/
 RUN gem install bundler 
 RUN bundle install
